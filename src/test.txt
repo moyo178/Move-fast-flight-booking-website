@@ -1,0 +1,249 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+    margin-left: 330px;
+}
+
+.hamburger .fa-bars, .hamburger .fa-times {
+    font-size: 1.5em;
+    color: white;
+} 
+
+.overlay {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9; 
+  height: 100px;
+  width: 10px;
+}
+
+.overlay .mobile-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .buttons {
+        display: none;
+    }
+}
+
+          {/* <div className="hamburger" onClick={toggleMenu}>
+            <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
+          </div>
+          {isOpen && (
+            <div className="overlay">
+              <nav className="mobile-nav">
+                <ul>
+                  <li className="list"onClick={toggleMenu}>About</li>
+                  <li className="list"onClick={toggleMenu}>Trips</li>
+                  <li className="list"onClick={toggleMenu}>Hotels</li>
+                  <li className="list"onClick={toggleMenu}>Blog</li>
+                  <li className="list"onClick={toggleMenu}>Contact Us</li>
+                </ul>
+              </nav>
+            </div>
+          )}
+        </div> */}
+
+   <nav className="nav-links">
+          <ul>
+            <li>
+              <Link to="/about-us">About</Link>
+            </li>
+            <li>Trips</li>
+            <li>Hotels</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+
+        color : #ECEEF5
+        blue ; #071C55
+
+        <motion.div 
+      className="about-us" 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 1 }}
+    >
+      <div className="hero-section">
+        <motion.h1 
+          className="hero-title"
+          initial={{ x: '-100vw' }} 
+          animate={{ x: 0 }} 
+          transition={{ type: 'spring', stiffness: 120 }}
+        >
+          Welcome to Move Fast Travel
+        </motion.h1>
+        <motion.p 
+          className="hero-subtitle"
+          initial={{ y: '100vh' }} 
+          animate={{ y: 0 }} 
+          transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
+        >
+          Your adventure starts here
+        </motion.p>
+      </div>
+      <div className="content-section">
+        <div className="section">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            Our Mission
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
+            At Move Fast Travel, we believe in the magic of exploration and the thrill of discovery. Our mission is to provide you with unforgettable travel experiences, tailored to your passions and preferences. From breathtaking landscapes to vibrant cultures, we guide you to the world's most stunning destinations.
+          </motion.p>
+        </div>
+        <div className="section">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+          >
+            Our Services
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2.5 }}
+          >
+            We offer personalized itineraries, exclusive deals, and comprehensive travel support. Whether you're looking for a relaxing beach vacation, an adventurous hike, or a cultural immersion, we have something for everyone.
+          </motion.p>
+        </div>
+        <div className="section">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3 }}
+          >
+            Our Team
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3.5 }}
+          >
+            Our team of travel enthusiasts is dedicated to making your journey unforgettable. With years of experience and a passion for travel, we are here to help you every step of the way.
+          </motion.p>
+        </div>
+        <div className="section">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 4 }}
+          >
+            Contact Us
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 4.5 }}
+          >
+            Have questions or need assistance with planning your next adventure? Reach out to us anytime. We're here to help you make the most of your travel experience.
+          </motion.p>
+        </div>
+      </div>
+    </motion.div>
+
+
+
+ <div className="input-boxes">
+         <div className="input-box2">
+          <div className="input-label">
+      <input type="text" id="flying-from" placeholder="City Or Airport" required />
+    <label>FLYING FROM</label>
+ </div>
+<div className="input-label">
+    <input type="text" id="flying-from" placeholder="City Or Airport" required />
+    <label>FLYING TO</label>
+ </div>   
+           <div className="input-label">
+      <input type="text" id="flying-from" placeholder="" required />
+      <label>FLYING TO</label>
+        </div>
+  
+      <div className="input-label">
+        <input type="text" id="flying-from" placeholder="" required />
+        <label>FLYING TO</label>
+    </div>  
+      </div>
+   </div>
+
+   the tripsss.jsx
+
+   <section className="Trips-booking">
+      <div className="Trips-booking_text">
+         <h1>
+      Book Your Flights Today
+        </h1>
+        <p>Your journey begins with us. Discover the world like never before.</p>
+      </div>
+       <div className="Trips-booking-box">
+       <div className="option">
+  <label>
+    <input type="radio" name="tripType" id="check1" />
+    <span className="custom-checkbox"></span>
+   <h6>RoundTrip</h6> 
+  </label>
+  <label>
+    <input type="radio" name="tripType" id="check2" />
+    <span className="custom-checkbox"></span>
+    <h6>OneWay</h6>
+  </label>
+  <label>
+    <input type="radio" name="tripType" id="check3" />
+    <span className="custom-checkbox"></span>
+    <h6>Multi-city</h6>
+  </label>
+</div>
+   <div className="input-boxes">
+    <div className="input-boxx">
+      <div className="input-label1">
+      <input type="text" name="" id="Flying-from" placeholder="City Or Airport" required />
+       <label>FLYING FROM</label>
+      </div>    
+      <div className="input-label1">
+      <input type="text" name="" id="Flying-To" placeholder="City Or Airport" required />
+       <label>FLYING TO</label>
+      </div>    
+</div>
+    <div className="input-boxx1">
+      <div className="input-label1">
+      <input type="text" name="" id="Flying-from" placeholder="" required />
+       <label>DEPARTING</label>
+      </div>    
+      <div className="input-label1">
+      <input type="text" name="" id="Flying-To" placeholder="" required />
+       <label>RETURNING</label>
+      </div>    
+    </div>
+    <div>
+    <SelectBox />
+    </div>
+   
+   </div>
+</div>
+  </section>
+
+  CSS
